@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Navbar = () => {
 
     return (
-        <div className="Navbar flex flex-row justify-between text-white items-center">
+        <div className="Navbar flex flex-row justify-between text-white items-center mx-16">
             <div>
                 <Link href='/' className="logo flex flex-row gap-4">
                     <MLSALogo />

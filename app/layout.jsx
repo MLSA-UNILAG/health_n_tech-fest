@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className="bg-primary my-3 mx-12">
+      <body className="bg-primary my-3">
         <div className="w-[100%]">
           <Navbar />
         </div>
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
 
-        <div className="top-0 absolute -z-10">
+        <div className="top-0 -mt-20 absolute -z-10">
           <MeshGradient />
         </div>
       </body>
