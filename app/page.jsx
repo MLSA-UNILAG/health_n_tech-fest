@@ -1,8 +1,10 @@
 import { AboutUs } from "@/components/ui/AboutUs";
 import { Button } from "@/components/ui/Button";
+import { Carousel } from "@/components/ui/Carousel";
 import CountdownTimer, { Countdown } from "@/components/ui/Countdown";
 import { HeroSection } from "@/components/ui/Hero";
 import { Speakers } from "@/components/ui/Speakers";
+import { Volunteers } from "@/components/ui/Volunteers";
 import { CalendarIcon, ClockIcon, Line, LocationIcon } from "@/public/Icons";
 
 export default function Home() {
@@ -36,6 +38,10 @@ export default function Home() {
 
       <AboutUs />
       <Speakers />
+      <Volunteers />
+      <div className="">
+        <Carousel />
+      </div>
     </main>
   );
 }

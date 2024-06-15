@@ -10,7 +10,7 @@ export const HeroSection = () => {
                     <StickerGirl />
                 </div>
                 <div className="w-fit flex flex-col gap-3 justify-center items-center">
-                    <div className="border border-white bg-yellow w-fit py-1 px-7 rounded-full text-black -rotate-6 gap-2">Introducing</div>
+                    <div className="border border-white bg-yellow w-fit py-1 px-7 rounded-full text-black -rotate-6">Introducing</div>
                     <div className="text-5xl font-semibold italic">
                         <p className="text-stroke text-fill-transperent text-background-clip ml-2 mt-6 tracking-wider -z-10">Health-n-Tech Fest</p>
                         <p className="z-10 -mt-[50px] tracking-wider ">Health-n-Tech Fest</p>
