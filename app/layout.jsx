@@ -30,12 +30,14 @@ export default function RootLayout({ children }) {
           className={inter.className}
           id="main-content"
         >
-          <ThemeProvider>{children}</ThemeProvider>
-          <FAQ faqs={faqs} />
-          <MoreFAQ />
-          <Sponsors />
-          <RSVP />
-          <Footer />
+          <ThemeProvider>
+            {children}
+            <FAQ faqs={faqs} />
+            <MoreFAQ />
+            <Sponsors />
+            <RSVP />
+            <Footer />
+          </ThemeProvider>
 
         </main>
 

@@ -12,11 +12,11 @@ const FAQ = ({ faqs }) => {
   }
 
   return (
-    <section className='text-white py-7'>
+    <section className='text-white py-16'>
       <div className="text-center w-11/12 max-w-6xl m-auto">
-        <div className='my-6 relative px-20'>
-          <h4 className='font-bold text-xl text-[#50e6ff]'>OUR MOST ASKED QUESTIONS</h4>
-          <p className='md:text-2xl font-light'>Answers at Your Fingertips. Get Clarity on Common Questions.</p>
+        <div className='my-6 relative px-20 mb-10'>
+          <h4 className='font-bold text-lg md:text-xl text-[#50e6ff] mb-2'>OUR MOST ASKED QUESTIONS</h4>
+          <p className=' md:text-2xl font-light'>Answers at Your Fingertips. Get Clarity on Common Questions.</p>
           <FAQAvatarMale className='text-6xl absolute right-0 top-0' />
           <FAQAvatarFemale className='text-6xl absolute left-0 bottom-0' />
         </div>

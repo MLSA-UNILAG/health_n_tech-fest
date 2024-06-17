@@ -55,7 +55,7 @@ module.exports = withMT({
       const newUtilities = {
         '.text-stroke': {
           '-webkit-text-stroke-color': '#50E6FF',
-          '-webkit-text-stroke-width': '2px',
+          '-webkit-text-stroke-width': '1px',
         },
         '.text-fill-transperent': {
           '-webkit-text-fill-color': '#203961',

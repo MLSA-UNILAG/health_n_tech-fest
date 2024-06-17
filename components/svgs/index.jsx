@@ -1,3 +1,5 @@
+// SPEAKERS PAGE
+
 // hero section svgs
 export { default as HeroAvatarMale } from "@/public/icons/hero-avatar-male.svg"
 export { default as HeroAvatarFemale } from "@/public/icons/hero-avatar-female.svg"
@@ -17,3 +19,10 @@ export { default as FacebookIcon } from "@/public/icons/socials/facebook_logo.sv
 export { default as InstagramIcon } from "@/public/icons/socials/instagram_logo.svg"
 export { default as LinkedinIcon } from "@/public/icons/socials/linkedin_logo.svg"
 export { default as MLSAUnilagLogo } from "@/public/icons/mlsa-unilag.svg"
+
+// TEAMS PAGE
+
+// hero section svgs
+export { default as TeamHeroAvatarMale } from "@/public/icons/team-hero-male.svg"
+export { default as TeamHeroAvatarFemale } from "@/public/icons/team-hero-female.svg"
+
