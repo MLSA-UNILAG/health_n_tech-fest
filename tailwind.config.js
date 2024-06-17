@@ -24,11 +24,14 @@ module.exports = {
       button_gradient_to: '#1A9CFF',
       sticker_gradient_from: '#E3D7D2',
       sticker_gradient_to: '#CDB9B0',
+      infoCard_bg: 'rgba(36, 76, 132, 0.9)',
+      infoCard_border: '#00B6DC',
       lightBlue: '#50E6FF',
       lightPurple: '#9E67E5',
       faqCard: 'rgba(36, 76, 132, 0.5)',
       yellow: 'rgba(250, 169, 68, 1)',
-
+      br: '#CDFBFF40',
+      profile: '#F5FEED',
     },
   },
   plugins: [
@@ -36,7 +39,7 @@ module.exports = {
       const newUtilities = {
         '.text-stroke': {
           '-webkit-text-stroke-color': '#50E6FF',
-          '-webkit-text-stroke-width': '2px',
+          '-webkit-text-stroke-width': '1px',
         },
         '.text-fill-transperent': {
           '-webkit-text-fill-color': '#203961',
@@ -44,8 +47,13 @@ module.exports = {
         '.text-background-clip': {
           '-webkit-background-clip': 'text',
         },
+
       };
       addUtilities(newUtilities, ['responsive', 'hover']);
-    }
+    },
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+  }
   ],
 };

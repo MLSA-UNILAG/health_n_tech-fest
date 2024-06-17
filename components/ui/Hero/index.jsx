@@ -10,10 +10,10 @@ export const HeroSection = () => {
                     <StickerGirl />
                 </div>
                 <div className="w-fit flex flex-col gap-3 justify-center items-center">
-                    <div className="border border-white bg-yellow w-fit py-1 px-7 rounded-full text-black -rotate-6 gap-2">Introducing</div>
+                    <div className="border border-white bg-yellow w-fit py-1 px-7 rounded-full text-black -rotate-6">Introducing</div>
                     <div className="text-5xl font-semibold italic">
-                        <p className="text-stroke text-fill-transperent text-background-clip ml-3 mt-6 -z-10">Health-n-Tech Fest</p>
-                        <p className="z-10 -mt-[50px] ">Health-n-Tech Fest</p>
+                        <p className="text-stroke text-fill-transperent text-background-clip ml-2 mt-6 tracking-wider -z-10">Health-n-Tech Fest</p>
+                        <p className="z-10 -mt-[50px] tracking-wider ">Health-n-Tech Fest</p>
                         {/* <div>
                             <StrokeText />
                         </div> */}
@@ -33,7 +33,7 @@ export const HeroSection = () => {
                 <p className="text-sm">
                     Join us for a community-driven health awareness event by the MLSA Unilag Community! Designed to bridge the knowledge gap in healthcare, Health-n-Tech Fest Lagos brings together students and individuals to explore and discuss crucial healthcare topics. Be a part of this transformative experience and help build a healthier Nigeria.
                 </p>
-                <Button className="w-fit" />
+                <Button className="w-fit" text="Get your Ticket"/>
             </div>
         </div>
     )
