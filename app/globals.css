@@ -2,3 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "Segoe";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Segoe"), url("/fonts/segoeui-semilight.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Segoe";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Segoe"), url("/fonts/segoeui-light.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Segoe";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Segoe"), url("/fonts/segoeui.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Segoe";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Segoe"), url("/fonts/segoeui-semibold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Segoe";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Segoe"), url("/fonts/segoeui-bold.ttf") format("opentype");
+}
+
+@layer utilities {
+  .custom-3d-shadow {
+    text-shadow: 1px 5px 1px #50e6ff;
+  }
+}

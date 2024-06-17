@@ -1,9 +1,9 @@
-import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
-    <main className="">
-      <p>MLSA Health Tech Fest</p>
+    <main>
+      Home Page
     </main>
   );
 }
