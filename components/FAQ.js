@@ -12,7 +12,7 @@ const FAQ = ({ faqs }) => {
   }
 
   return (
-    <section className='bg-gradient-to-r from-[#243963] via-[#184055] to-[#243d64] text-white py-7'>
+    <section className='text-white py-7'>
       <div className="text-center w-11/12 max-w-6xl m-auto">
         <div className='my-6 relative px-20'>
           <h4 className='font-bold text-xl text-[#50e6ff]'>OUR MOST ASKED QUESTIONS</h4>

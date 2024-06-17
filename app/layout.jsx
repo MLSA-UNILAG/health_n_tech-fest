@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/ui/Navbar";
-import { MeshGradient } from "@/public/Icons/MeshGradient";
+import { MeshGradient } from "@/public/icons/MeshGradient";
 import { ThemeProvider } from "@/material/ui";
 import faqs from "@/data/faqs"
 import FAQ from '@/components/FAQ'
@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className="bg-primary my-3 mx-12">
-        <div className="w-[100%]">
+      <body className="bg-primary">
+        <div className="w-full px-12 pt-6">
           <Navbar />
         </div>
 

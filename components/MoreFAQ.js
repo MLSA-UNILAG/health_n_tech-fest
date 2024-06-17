@@ -4,8 +4,8 @@ import AppButton from './speakers/AppButton'
 
 const MoreFAQ = () => {
   return (
-    <section>
-      <div className='bg-white w-11/12 m-auto flex flex-col items-center text-center gap-4 my-5 border'>
+    <section className='bg-white'>
+      <div className='w-11/12 m-auto flex flex-col items-center text-center gap-4 my-8'>
         <Image
           src={'/icons/faq-avatar-grp.svg'}
           alt='FAQ avatar'

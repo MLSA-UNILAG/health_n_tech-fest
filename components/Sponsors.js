@@ -48,7 +48,7 @@ const Sponsors = () => {
   ]
 
   return (
-    <section className="bg-gradient-to-r from-[#243963] via-[#184055] to-[#243d64] py-8">
+    <section className="py-8">
       <div>
         <div className="border border-[#617b97] rounded-lg flex flex-col md:flex-row items-center w-3/5 m-auto px-4 py-6 my-6">
           <h5 className="font-semibold text-white text-center flex-1 tracking-widest">POWERED BY</h5>
