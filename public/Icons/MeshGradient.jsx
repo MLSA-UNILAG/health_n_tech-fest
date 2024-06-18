@@ -1,5 +1,5 @@
 export const MeshGradient = () => {
     return (
-        <img src="/images/meshgradient.png" alt="gradient" />
+        <img src="/meshgradient.png" alt="gradient" />
     )
 }

@@ -16,9 +16,9 @@ const Footer = () => {
           />
         </div>
         <div className="flex flex-col items-center gap-3 py-4">
-          <Link href='/' className="text-sm">Speakers</Link>
+          <Link href='/speakers' className="text-sm">Speakers</Link>
           <Link href='/' className="text-sm">Schedule</Link>
-          <Link href='/' className="text-sm">Teams</Link>
+          <Link href='/team' className="text-sm">Teams</Link>
           <Link href='/' className="text-sm">Become a volunteer</Link>
         </div>
         <div className="flex flex-col items-center gap-3 py-4">

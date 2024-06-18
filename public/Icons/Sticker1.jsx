@@ -1,6 +1,6 @@
 export const Sticker1 = () => {
 
     return (
-        <img src="/images/AvatarGuy.png" alt="Avatar" />
+        <img src="/Avatar-1.png" alt="" />
     )
 }

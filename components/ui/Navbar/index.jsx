@@ -1,11 +1,12 @@
 import { ArrowRightIcon } from "@/public/Icons/ArrowRight"
 import { MLSALogo } from "@/public/Icons/MLSALogo"
 import Link from "next/link";
+import { Button } from "../Button";
 
 export const Navbar = () => {
 
     return (
-        <div className="Navbar flex flex-row justify-between text-white items-center">
+        <div className="Navbar flex flex-row justify-between text-white items-center mx-16">
             <div>
                 <Link href='/' className="logo flex flex-row gap-4">
                     <MLSALogo />
@@ -38,13 +39,13 @@ export const Navbar = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link href='#'>
+                    {/* <Link href='#'>
                         <div className="bg-bl flex flex-row gap-3 p-2 rounded-lg w-fit border-wh border-solid border">
                             <p>RSVP</p>
                             <ArrowRightIcon />
                         </div>
-                    </Link>
-
+                    </Link> */}
+                    <Button text="RSVP" />
                 </div>
             </div>
         </div>
