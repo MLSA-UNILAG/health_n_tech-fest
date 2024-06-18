@@ -45,9 +45,9 @@ export const Speakers = () => {
                     <Line2 />
                 </div>
             </div>
-            <div className="flex flex-wrap my-12 columns-3 gap-4 overflow-hidden">
+            <div className="flex flex-wrap my-12 columns-3 gap-4 overflow-hidden justify-center">
                 {speakers.map((speaker, index) => (
-                    <div style={{ display: index < 4 ? 'block' : 'none' }}>
+                    <div key={index} style={{ display: index < 4 ? 'block' : 'none' }}>
                         <ProfileCard key={`${speaker.name}_${index}`} speaker={speaker} />
                     </div>
                 ))}
