@@ -19,7 +19,7 @@ export const Navbar = () => {
 
             <div className="flex flex-row gap-6 text-[16px] items-center">
                 <div>
-                    <Link href='#'>
+                    <Link href='/speakers'>
                         Speakers
                     </Link>
                 </div>
@@ -29,7 +29,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link href='#'>
+                    <Link href='/team'>
                         Team
                     </Link>
                 </div>

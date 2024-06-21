@@ -2,7 +2,7 @@ import React from 'react'
 import AppButton from './speakers/AppButton'
 import { RSVPAvatarFemale, RSVPAvatarMale } from './svgs'
 import Image from 'next/image';
-import { MeshGradient } from "@/public/icons/MeshGradient";
+import { MeshGradient } from "@/public/Icons/MeshGradient";
 
 const RSVP = () => {
   return (

@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/ui/Navbar";
-import { MeshGradient } from "@/public/icons/MeshGradient";
+import { MeshGradient } from "@/public/Icons/MeshGradient";
 import { ThemeProvider } from "@/material/ui";
 import faqs from "@/data/faqs"
 import FAQ from '@/components/FAQ'

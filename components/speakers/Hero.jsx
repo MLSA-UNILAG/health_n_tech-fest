@@ -18,7 +18,7 @@ const Hero = () => {
               </h3>
             </div>
             <div>
-              <p className='text-base font-semibold'>We have selected the best to bring you amazing talks in this year's <br /> Fest. Brace up for a premium experience.</p>
+              <p className='text-base font-semibold'>We have selected the best to bring you amazing talks in this year&apos;s <br /> Fest. Brace up for a premium experience.</p>
               <AppButton>Get your ticket</AppButton>
             </div>
           </div>
