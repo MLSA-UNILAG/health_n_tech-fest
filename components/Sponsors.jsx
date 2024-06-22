@@ -59,7 +59,7 @@ const Sponsors = () => {
             height={50}
             className="flex-1"
           /> */}
-          <MLSAUnilagLogo className="flex-1 text-9xl" />
+          <MLSAUnilagLogo className="flex-1 text-10xl md:text-9xl" />
         </div>
         <div className="border border-[#617b97] rounded-lg flex flex-col items-center gap-8 w-4/5 m-auto px-6 py-6 my-6">
           <h5 className="font-semibold text-white text-center tracking-widest">OUR HEADLINE SPONSORS</h5>

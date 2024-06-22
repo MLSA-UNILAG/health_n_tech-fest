@@ -1,4 +1,5 @@
 import React from 'react'
+import { Divider } from "../svgs"
 import SpeakerCard from './SpeakerCard'
 import speakerData from '@/data/speakerdata'
 
@@ -11,6 +12,7 @@ const SpeakersList = () => {
           <h4 className='font-bold text-2xl lg:text-3xl mb-3'>Meet Our Speakers</h4>
           <p className='text-xs lg:text-sm font-medium'>Trailblazing Experts. Inspiring Voices Leading the Health-Tech Revolution.</p>
         </div>
+        <Divider className='text-sm w-full' />
         <div className="md:px-32">
           { speakerData.map(speaker => (
             <SpeakerCard 

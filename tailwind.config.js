@@ -25,6 +25,9 @@ module.exports = withMT({
       colors: {
         "primary-color": "#292929"
       },
+      fontSize: {
+        "10xl": "10rem"
+      },
       textShadow: {
         "text-3d": "1px 1px 2px #000000",
       },

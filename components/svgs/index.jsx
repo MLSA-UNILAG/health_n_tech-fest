@@ -26,3 +26,5 @@ export { default as MLSAUnilagLogo } from "@/public/Icons/mlsa-unilag.svg"
 export { default as TeamHeroAvatarMale } from "@/public/Icons/team-hero-male.svg"
 export { default as TeamHeroAvatarFemale } from "@/public/Icons/team-hero-female.svg"
 
+// Divider Line
+export { default as Divider } from "@/public/Icons/Divider.svg"
