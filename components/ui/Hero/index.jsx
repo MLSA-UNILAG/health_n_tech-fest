@@ -1,4 +1,4 @@
-import { StickerGirl, StickerGuy } from "@/public/Icons/"
+import { StickerGirl, StickerGuy } from "@/public/Icons"
 import { Button } from "../Button"
 import StrokeText from "../StrokeText"
 

@@ -14,7 +14,7 @@ const MoreFAQ = () => {
         />
         <div>
           <h3 className='font-semibold text-2xl mb-3'>Still have some questions?</h3>
-          <p className='text-[#7c7c7c]'>Can't find the answer you're looking for? <br />Please contact our friendly team.</p>
+          <p className='text-[#7c7c7c]'>Can&apos;t find the answer you&apos;re looking for? <br />Please contact our friendly team.</p>
           <AppButton>Get in Touch</AppButton>
         </div>
       </div>

@@ -5,7 +5,7 @@ const TeamCard = ({ image, name, role }) => {
   return (
     <div className="flex flex-col gap-4 items-center">
        <Image 
-        src={'/images/speaker.png'}
+        src={image}
         alt='Speaker image'
         width={180}
         height={200}

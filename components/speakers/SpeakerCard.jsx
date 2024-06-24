@@ -5,7 +5,7 @@ const SpeakerCard = ({ image, title, speaker, role }) => {
   return (
     <div className='flex gap-3 md:gap-7 md:px-8 my-8 items-center border-black'>
       <Image 
-        src={'/images/speaker.png'}
+        src={image}
         alt='Speaker image'
         width={140}
         height={160}

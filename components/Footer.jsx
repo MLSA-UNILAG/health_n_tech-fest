@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+// import footerLogo from '@/public/Images/footer-logo.png'
 import { FacebookIcon, TwitterIcon, LinkedinIcon, InstagramIcon } from './svgs'
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="w-11/12 m-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-3 md:gap-y-6 p-4">
         <div className="flex flex-col items-center justify-center md:col-span-3 lg:col-auto py-4">
           <Image
-            src={'/images/footer-logo.png'}
+            src={'/Images/footer-logo.png'}
             alt='MLSA Health-n-Tech Logo'
             width={200}
             height={200}

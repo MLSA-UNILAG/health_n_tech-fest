@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import FAQCard from './FAQCard'
-import { FAQAvatarMale, FAQAvatarFemale } from './svgs'
+import { FAQAvatarMale, FAQAvatarFemale, Divider } from './svgs'
 
 const FAQ = ({ faqs }) => {
   const [openStates, setOpenStates] = useState(faqs.map((faq, index) => (index === 0 ? true : false)))
@@ -20,7 +20,8 @@ const FAQ = ({ faqs }) => {
           <FAQAvatarMale className='text-6xl absolute right-0 top-0' />
           <FAQAvatarFemale className='text-6xl absolute left-0 bottom-0' />
         </div>
-        <hr className='border-[#586983]' />
+        {/* <hr className='border-[#586983]' /> */}
+        <Divider className='w-full' />
         <div className='text-left'>
           {faqs.map((faq, index) => (
             <FAQCard
