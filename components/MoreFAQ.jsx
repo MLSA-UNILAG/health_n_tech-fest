@@ -7,7 +7,7 @@ const MoreFAQ = () => {
     <section className='bg-white py-16'>
       <div className='w-11/12 m-auto flex flex-col items-center text-center gap-4'>
         <Image
-          src={'/icons/faq-avatar-grp.svg'}
+          src={'/Icons/faq-avatar-grp.svg'}
           alt='FAQ avatar'
           width={200}
           height={200}

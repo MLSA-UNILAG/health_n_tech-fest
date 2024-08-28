@@ -7,43 +7,43 @@ const Sponsors = () => {
   const sponsorList = [
     {
       id: 1,
-      logo: '/images/nithub.png'
+      logo: '/group.png'
     },
     {
       id: 2,
-      logo: '/images/unilag.png'
+      logo: '/group.png'
     },
     {
       id: 3,
-      logo: '/images/nithub.png'
+      logo: '/Images/nithub.png'
     },
     {
       id: 4,
-      logo: '/images/unilag.png'
+      logo: '/Images/unilag.png'
     },
     {
       id: 5,
-      logo: '/images/nithub.png'
+      logo: '/Images/nithub.png'
     },
     {
       id: 6,
-      logo: '/images/unilag.png'
+      logo: '/Images/unilag.png'
     },
     {
       id: 7,
-      logo: '/images/nithub.png'
+      logo: '/Images/nithub.png'
     },
     {
       id: 8,
-      logo: '/images/unilag.png'
+      logo: '/Images/unilag.png'
     },
     {
       id: 9,
-      logo: '/images/nithub.png'
+      logo: '/Images/nithub.png'
     },
     {
       id: 10,
-      logo: '/images/unilag.png'
+      logo: '/Images/unilag.png'
     },
   ]
 
