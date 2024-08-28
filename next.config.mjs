@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 // const nextConfig = {};
+import path from 'path';
 
 function defineNextConfig(config) {
   return config;
@@ -18,6 +19,11 @@ export default defineNextConfig({
         },
       ],  
     });
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(process.cwd()), // This maps '@' to the root directory
+    };
     return config
   },
 });
