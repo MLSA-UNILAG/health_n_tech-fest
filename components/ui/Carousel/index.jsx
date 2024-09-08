@@ -19,7 +19,7 @@ export const Carousel = () => {
 
     return (
         <div className="!bg-white flex overflow-hidden w-full pb-10">
-            <div className="flex transition-transform duration-1000 ease-in-out">
+            <div className="flex transition-transform duration-1000 ease-in-out w-5/6 md:w-full m-auto">
                 {images.map((image, index) => (
                     <div key={index} className='border-t-8 border-r-4 border-b-8 border-black border-collapse'>
                         {image}

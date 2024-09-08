@@ -17,8 +17,8 @@ const FAQ = ({ faqs }) => {
         <div className='my-6 relative px-20 mb-10'>
           <h4 className='font-bold text-lg md:text-xl text-[#50e6ff] mb-2'>OUR MOST ASKED QUESTIONS</h4>
           <p className=' md:text-2xl font-light'>Answers at Your Fingertips. Get Clarity on Common Questions.</p>
-          <FAQAvatarMale className='text-6xl absolute right-0 top-0' />
-          <FAQAvatarFemale className='text-6xl absolute left-0 bottom-0' />
+          <FAQAvatarMale className='w-12 h-14 md:w-14 md:h-16 absolute right-0 top-0' />
+          <FAQAvatarFemale className='w-14 h-14 md:w-14 md:h-16 absolute left-0 bottom-0' />
         </div>
         {/* <hr className='border-[#586983]' /> */}
         <Divider className='w-full' />

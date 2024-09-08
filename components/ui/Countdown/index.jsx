@@ -69,28 +69,28 @@ const CountdownTimer = ({ targetDate }) => {
     timerComponents.push(
         <div className="text-center my-4">
             <p className="text-lightBlue text-xl tracking-widest">COMING TO YOU IN</p>
-            <div className="flex flex-row my-10 gap-8 items-center justify-center align-middle">
+            <div className="flex flex-row my-10 gap-3 md:gap-8 items-center justify-center align-middle">
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['days']}</p>
-                    <p className="text-yellow">Days</p>
+                    <p className="text-white text-3xl xs:text-7xl font-semibold">{timeLeft['days']}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Days</p>
                 </div>
 
-                <p className="text-8xl text-white">:</p>
+                <p className="text-2xl md:text-8xl text-white">:</p>
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['hours']}</p>
-                    <p className="text-yellow">Hours</p>
+                    <p className="text-white text-3xl xs:text-7xl font-semibold">{timeLeft['hours']}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Hours</p>
                 </div>
-                <p className="text-8xl text-white">:</p>
+                <p className="text-2xl md:text-8xl text-white">:</p>
 
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['minutes']}</p>
-                    <p className="text-yellow">Minutes</p>
+                    <p className="text-white text-3xl xs:text-7xl font-semibold">{timeLeft['minutes']}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Minutes</p>
                 </div>
-                <p className="text-8xl text-white">:</p>
+                <p className="text-2xl md:text-8xl text-white">:</p>
 
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['seconds']}</p>
-                    <p className="text-yellow">Seconds</p>
+                    <p className="text-white text-3xl xs:text-7xl font-semibold">{timeLeft['seconds']}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Seconds</p>
                 </div>
             </div>
         </div>

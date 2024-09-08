@@ -1,7 +1,8 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
-module.exports = withMT({
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,7 +34,7 @@ module.exports = withMT({
       },
       textStroke: {
         "stroke-3d": "4px black"
-      }
+      },
     },
     colors: {
       transparent: 'transparent',
@@ -55,6 +56,14 @@ module.exports = withMT({
       br: '#CDFBFF40',
       profile: '#F5FEED',
     },
+    screens: {
+      'xs': '400px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [
     function({addUtilities}) {
@@ -78,4 +87,4 @@ module.exports = withMT({
       addVariant('child-hover', '& > *:hover');
   }
   ],
-});
+}

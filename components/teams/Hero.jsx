@@ -4,20 +4,20 @@ import { TeamHeroAvatarMale, TeamHeroAvatarFemale } from '../svgs';
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center text-white text-center h-[85vh] md:h-[60vh]">
-      <div className='flex items-center justify-center w-11/12 m-auto max-w-6xl py-16 md:py-14 relative'>
-          <div className='w-4/5'>
-            <TeamHeroAvatarMale className='text-6xl absolute right-0 top-0' />
-            <TeamHeroAvatarFemale className='text-6xl absolute left-0 bottom-1/2 translate-y-1/2' />
-            <div className='text-5xl mb-10'>
-              <h3 className='drop-shadow-2xl font-bold'>
-              <span className='text-yellow'>Without them</span>
-                  , there would <br />be no event or fest
-                  <span className='text-yellow'>.</span>
+    <section className="flex items-center justify-center text-white text-center">
+      <div className='flex items-center justify-center w-11/12 m-auto max-w-6xl pt-4 pb-16 md:py-14'>
+          <div className='w-11/12 lg:w-4/5'>
+            <div className='flex flex-col md:flex-row text-4xl md:text-5xl md:my-10 gap-0'>
+              <TeamHeroAvatarFemale className='self-end w-14 h-14 md:w-20 md:h-20 mt-5 md:ml-5' />
+              <h3 className='drop-shadow-2xl font-bold px-6 md:w-4/6 m-auto'>
+                <span className='text-yellow'>Without them</span>
+                    , there would <br />be no event or fest
+                    <span className='text-yellow'>.</span>
               </h3>
+              <TeamHeroAvatarMale className='w-14 h-14 mb-5 md:w-20 md:h-20 md:mr-5' />
             </div>
             <div>
-              <p className='text-base font-semibold'>Meet the dedicated team working tirelessly behind the scenes to bring you an unforgettable experience. Their passion and commitment make it all possible.</p>
+              <p className='text-base font-semibold my-4'>Meet the dedicated team working tirelessly behind the scenes to bring you an unforgettable experience. Their passion and commitment make it all possible.</p>
               <AppButton>Reserve your Seat</AppButton>
             </div>
           </div>
