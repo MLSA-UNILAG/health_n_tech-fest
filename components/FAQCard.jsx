@@ -20,14 +20,14 @@ const FAQCard = ({ title, text, isOpen, onToggle }) => {
         >
           <div className='flex justify-between gap-5 w-full'>
             <Image
-              src={'/icons/question-mark.svg'}
+              src={'/Icons/question-mark.svg'}
               alt='Question mark icon'
               width={20}
               height={20}
             />
             <p className='text-lg flex-1'>{title}</p>
             <Image  
-              src={isOpen ? '/icons/arrow-up.svg' : '/icons/arrow-down.svg'}
+              src={isOpen ? '/Icons/arrow-up.svg' : '/Icons/arrow-down.svg'}
               alt='Arrow down button'
               width={20}
               height={20}
