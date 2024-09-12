@@ -1,13 +1,13 @@
 // SPEAKERS PAGE
 
 // hero section svgs
-export { default as HeroAvatarMale } from "@/public/Icons/hero-avatar-male.svg"
-export { default as HeroAvatarFemale } from "@/public/Icons/hero-avatar-female.svg"
-export { default as HeroAvatarFemale2 } from "@/public/Icons/hero-avatar-female2.svg"
+// export { default as HeroAvatarMale } from "@/public/Icons/hero-avatar-male.svg"
+// export { default as HeroAvatarFemale } from "@/public/Icons/hero-avatar-female.svg"
+// export { default as HeroAvatarFemale2 } from "@/public/Icons/hero-avatar-female2.svg"
 
 // rsvp section svgs
-export { default as RSVPAvatarFemale } from "@/public/Icons/rsvp-avatar-female.svg"
-export { default as RSVPAvatarMale } from "@/public/Icons/rsvp-avatar-male.svg"
+// export { default as RSVPAvatarFemale } from "@/public/Icons/rsvp-avatar-female.svg"
+// export { default as RSVPAvatarMale } from "@/public/Icons/rsvp-avatar-male.svg"
 
 // faq section svgs
 export { default as FAQAvatarMale } from "@/public/Icons/faq-avatar-male.svg"
