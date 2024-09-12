@@ -1,6 +1,7 @@
 import React from 'react'
 import AppButton from './speakers/AppButton'
-import { RSVPAvatarFemale, RSVPAvatarMale } from './svgs'
+import RSVPAvatarFemale from "./svgs/RSVPAvatarFemale"
+import RSVPAvatarMale from "./svgs/RSVPAvatarMale"
 import Image from 'next/image';
 import { MeshGradient } from "@/public/Icons/MeshGradient";
 
