@@ -1,17 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 import SponsorCard from './speakers/SponsorCard'
-import { MLSAUnilagLogo } from './svgs'
+// import { MLSAUnilagLogo } from './svgs'
+import MLSAUnilagLogo from './svgs/MLSAUnilagLogo'
 
 const Sponsors = () => {
   const sponsorList = [
     {
       id: 1,
-      logo: '/group.png'
+      logo: '/Images/nithub.png'
     },
     {
       id: 2,
-      logo: '/group.png'
+      logo: '/Images/unilag.png'
     },
     {
       id: 3,
@@ -52,7 +53,7 @@ const Sponsors = () => {
       <div>
         <div className="border border-[#617b97] rounded-lg flex flex-col sm:flex-row items-center w-3/5 m-auto px-4 py-6 my-6">
           <h5 className="font-semibold text-white text-center flex-1 tracking-widest mb-3">POWERED BY</h5>
-          <MLSAUnilagLogo className="flex-1 text-6xl md:text-9xl" />
+          <MLSAUnilagLogo className="flex-1 " />
         </div>
         <div className="border border-[#617b97] rounded-lg flex flex-col items-center gap-8 w-4/5 m-auto px-6 py-6 my-6">
           <h5 className="font-semibold text-white text-center tracking-widest">OUR HEADLINE SPONSORS</h5>

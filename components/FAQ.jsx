@@ -2,7 +2,9 @@
 
 import React, { useState } from 'react'
 import FAQCard from './FAQCard'
-import { FAQAvatarMale, FAQAvatarFemale, Divider } from './svgs'
+import Divider from './svgs/Divider';
+import FAQAvatarMale from './svgs/FAQAvatarMale'
+import FAQAvatarFemale from './svgs/FAQAvatarFemale'
 
 const FAQ = ({ faqs }) => {
   const [openStates, setOpenStates] = useState(faqs.map((faq, index) => (index === 0 ? true : false)))
@@ -17,8 +19,8 @@ const FAQ = ({ faqs }) => {
         <div className='my-6 relative px-20 mb-10'>
           <h4 className='font-bold text-lg md:text-xl text-[#50e6ff] mb-2'>OUR MOST ASKED QUESTIONS</h4>
           <p className=' md:text-2xl font-light'>Answers at Your Fingertips. Get Clarity on Common Questions.</p>
-          <FAQAvatarMale className='w-12 h-14 md:w-14 md:h-16 absolute right-0 top-0' />
-          <FAQAvatarFemale className='w-14 h-14 md:w-14 md:h-16 absolute left-0 bottom-0' />
+          <FAQAvatarMale className='w-14 h-14 md:w-16 md:h-16 absolute right-0 top-0' />
+          <FAQAvatarFemale className='w-14 h-14 md:w-16 md:h-16 absolute left-0 bottom-0' />
         </div>
         {/* <hr className='border-[#586983]' /> */}
         <Divider className='w-full' />

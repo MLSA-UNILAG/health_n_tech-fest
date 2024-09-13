@@ -19,7 +19,7 @@ export const HeroSection = () => {
                             <p className="absolute inset-0 z-10 italic font-medium">Health-n-Tech Fest</p>
                             <p className="absolute inset-0 ml-1 mt-1 text-stroke text-[#303b6e] z-0 italic font-medium">Health-n-Tech Fest</p>
                         </div>
-                        <span className="text-4xl md:text-5xl font-extrabold">Lagos 2024</span><span className="bg-yellow w-3 h-3 md:w-4 md:h-4 inline-block rounded-full"></span>
+                        <span className="text-4xl md:text-5xl font-extrabold">Lagos 2024 </span><span className="bg-yellow w-3 h-3 md:w-4 md:h-4 inline-block rounded-full"></span>
                     </h2>
                     <div className="absolute top-0 right-0 md:-right-12 translate-y-0">
                         <div className='w-[50px] h-[50px] sm:h-[70px] sm:w-[70px] xl:h-[100px] xl:w-[100px] mb-[100px] top-0 rounded-full p-2 bg-gradient-to-r from-sticker_gradient_from to-sticker_gradient_to flex items-center justify-center'>

@@ -9,7 +9,7 @@ const TeamCard = ({ image, name, role }) => {
         alt='Speaker image'
         width={180}
         height={200}
-        className='border-l border-t border-r-2 border-b-3 border-primary-color rounded-3xl'
+        className='border-l border-t border-r-4 border-b-4 border-primary-color rounded-3xl'
       />
       <div className="font-medium text-center">
         <h4 className="">{name}</h4>

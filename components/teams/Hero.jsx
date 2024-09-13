@@ -1,6 +1,8 @@
 import React from 'react'
 import AppButton from '../speakers/AppButton'
-import { TeamHeroAvatarMale, TeamHeroAvatarFemale } from '../svgs';
+// import { TeamHeroAvatarMale, TeamHeroAvatarFemale } from '../svgs';
+import TeamHeroAvatarFemale from '../svgs/TeamHeroAvatarFemale'
+import TeamHeroAvatarMale from '../svgs/TeamHeroAvatarMale'
 
 const Hero = () => {
   return (
