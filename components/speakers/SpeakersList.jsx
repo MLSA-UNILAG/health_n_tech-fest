@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider } from "../svgs"
+import Divider from '../svgs/Divider'
 import SpeakerCard from './SpeakerCard'
 import speakerData from '@/data/speakerdata'
 
