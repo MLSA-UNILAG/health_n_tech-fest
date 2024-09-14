@@ -1,9 +1,20 @@
-export const ArrowRightIcon = () => {
-
-    return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.025 4.94167L17.0834 10L12.025 15.0583" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M2.91663 10H16.9416" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    )
-}
+export const ArrowRightIcon = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={20}
+      height={20}
+      fill="none"
+      {...props}
+    >
+      <path
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+        d="M12.025 4.942 17.083 10l-5.058 5.058M2.917 10h14.025"
+      />
+    </svg>
+  );
+};

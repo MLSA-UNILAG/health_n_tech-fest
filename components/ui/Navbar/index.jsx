@@ -3,12 +3,39 @@
 import { ArrowRightIcon } from "@/public/Icons/ArrowRight";
 import { MLSALogo } from "@/public/Icons/MLSALogo";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "../Button";
 import { useState } from "react";
 import clsx from "clsx";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href) => pathname === href;
+
+  const headerLinks = [
+    {
+      id: 1,
+      title: "Speakers",
+      link: "/speakers"
+    },
+    {
+      id: 2,
+      title: "Schedule",
+      link: "#"
+    },
+    {
+      id: 3,
+      title: "Team",
+      link: "/team"
+    },
+    {
+      id: 4,
+      title: "Become a Volunteer",
+      link: "#"
+    }
+  ]
 
   return (
     <div className="Navbar text-white items-center mx-4 md:mx-6 md:flex md:justify-between lg:mx-10">
@@ -43,25 +70,12 @@ export const Navbar = () => {
         "md:flex md:items-center md:gap-4 lg:gap-6 text-[16px]",
         open ? "flex flex-col mt-5 gap-4" : "hidden"
       )}>
-        <div className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded">
-          <Link href="/speakers">Speakers</Link>
-        </div>
-        <div className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded">
-          <Link href="#">Schedule</Link>
-        </div>
-        <div className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded">
-          <Link href="/team">Team</Link>
-        </div>
-        <div className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded">
-          <Link href="#">Become a Volunteer</Link>
-        </div>
+        { headerLinks.map(link => (
+          <div key={link.id} className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded">
+            <Link href={link.link} className={isActive(link.link) ? "border-b-[1px] border-yellow py-1" : ""}>{link.title}</Link>
+          </div>
+        )) }
         <div className="py-2 rounded flex justify-center">
-          {/* <Link href='#'>
-                        <div className="bg-bl flex flex-row gap-3 p-2 rounded-lg w-fit border-wh border-solid border">
-                            <p>RSVP</p>
-                            <ArrowRightIcon />
-                        </div>
-                    </Link> */}
           <Button text="RSVP" />
         </div>
       </div>

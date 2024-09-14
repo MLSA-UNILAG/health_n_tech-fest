@@ -55,9 +55,10 @@ const CountdownTimer = ({ targetDate }) => {
         return timeLeft;
     };
 
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft] = useState({});
 
     useEffect(() => {
+        setTimeLeft(calculateTimeLeft());
         const timer = setTimeout(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
