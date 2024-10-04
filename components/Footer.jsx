@@ -2,7 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 // import footerLogo from '@/public/Images/footer-logo.png'
-import { FacebookIcon, TwitterIcon, LinkedinIcon, InstagramIcon } from './svgs'
+import FacebookIcon from './svgs/social/FacebookIcon'
+import InstagramIcon from './svgs/social/InstagramIcon'
+import LinkedinIcon from './svgs/social/LinkedinIcon'
+import TwitterIcon from './svgs/social/TwitterIcon'
 
 const Footer = () => {
   return (
@@ -30,10 +33,10 @@ const Footer = () => {
           <p className="text-sm">Contact Us</p>
           <p className="text-sm">Follow us:</p>
             <div className="grid grid-cols-4 gap-x-5">
-              <TwitterIcon className="text-2xl" />
-              <LinkedinIcon className="text-2xl" />
               <InstagramIcon className="text-2xl" />
               <FacebookIcon className="text-2xl" />
+              <LinkedinIcon className="text-2xl" />
+              <TwitterIcon className="text-2xl" />
             </div>
         </div>
       </div>

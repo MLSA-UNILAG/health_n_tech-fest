@@ -1,38 +1,39 @@
 import { AboutUs } from "@/components/ui/AboutUs";
-import { Button } from "@/components/ui/Button";
 import { Carousel } from "@/components/ui/Carousel";
-import CountdownTimer, { Countdown } from "@/components/ui/Countdown";
+import CountdownTimer from "@/components/ui/Countdown";
 import { HeroSection } from "@/components/ui/Hero";
 import { Speakers } from "@/components/ui/Speakers";
 import { Volunteers } from "@/components/ui/Volunteers";
-import { CalendarIcon, ClockIcon, Line, LocationIcon } from "@/public/Icons";
+import CalendarIcon from "@/components/svgs/CalendarIcon";
+import ClockIcon from "@/components/svgs/ClockIcon";
+import LocationIcon from "@/components/svgs/LocationIcon";
 
 export default function Home() {
   return (
     <main className="">
-      <div className="mt-[80px] mx-24">
+      <div className=" ">
         <HeroSection />
       </div>
 
-      <div className="mt-[80px] mx-24">
+      <div className="mt-5 md:mt-20 mx-24">
         {/* <Countdown /> */}
-        <CountdownTimer targetDate="2024-07-06T00:00:00" />
+        <CountdownTimer targetDate="2024-11-23T00:00:00" />
       </div>
 
-      <div className="border border-br rounded-md flex flex-row justify-between text-center p-8 items-center text-white mx-24">
+      <div className="border border-br rounded-md flex flex-col gap-4 md:flex-row justify-between text-center p-8 items-center text-white w-4/5 m-auto mt-8">
         <div className="flex flex-col justify-center items-center max-w-[300px] gap-3">
           <CalendarIcon />
-          <p>Saturday, July 6th, 2024</p>
+          <p className=" ">Saturday, November 22rd, 2024</p>
         </div>
 
         <div className="flex flex-col justify-center items-center max-w-[300px] gap-3">
           <LocationIcon />
-          <p>Lecture Theatre, Faculty of Social Sciences, University of Lagos.</p>
+          <p className=" ">Lecture Theatre, Faculty of Social Sciences, University of Lagos.</p>
         </div>
 
         <div className="flex flex-col justify-center items-center max-w-[300px] gap-3">
           <ClockIcon />
-          <p>10:00 am - 4:00 pm</p>
+          <p className="" >10:00 am - 4:00 pm</p>
         </div>
       </div>
 

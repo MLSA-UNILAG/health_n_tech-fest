@@ -1,4 +1,4 @@
-export * from './image1'
+export * from './Image1'
 export * from './Image2'
 export * from './image3'
 export * from './image4'
