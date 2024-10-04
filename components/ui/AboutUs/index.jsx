@@ -47,7 +47,7 @@ export const AboutUs = () => {
                     <div className="w-[45%] flex flex-col items-stretch">
                         <p className=" leading-8 font-light tracking-wider">MLSA UNILAG stands for Microsoft Learn Student Ambassadors, University of Lagos. We are a community of students passionate about learning and innovations. We are on a mission to equip students with the latest Microsoft tech skills and empower them to lead tech innovation on campus and beyond.</p>
                         <div className=" mt-[40px]">
-                            <Button text="Visit the Community" />
+                            <Button text="Visit the Community" link="x.com/mlsa_unilag" />
                         </div>
                     </div>
                 </div>

@@ -45,15 +45,24 @@ export const Speakers = () => {
                     <Line2 />
                 </div>
             </div>
-            <div className="flex flex-wrap my-12 columns-3 gap-4 overflow-hidden justify-center">
-                {speakers.map((speaker, index) => (
+            <div>
+                {/* When the Speakers details is ready, comment out the "coming soon" and use this */}
+                
+                {/* <div className="flex flex-wrap my-12 columns-3 gap-4 overflow-hidden justify-center">
+                    {speakers.map((speaker, index) => (
                     <div key={index} style={{ display: index < 4 ? 'block' : 'none' }}>
                         <ProfileCard key={`${speaker.name}_${index}`} speaker={speaker} />
                     </div>
                 ))}
+                </div> */}
+                <div className="flex flex-row items-end py-20 mb-5 gp-4 text-center justify-center bg-primary">
+                    <p className="text-6xl text-white font-extrabold">COMING SOON</p>
+                    <p className="text-yellow font-extrabold text-6xl">!</p>
+                </div>
             </div>
+
             <div className="flex justify-center">
-                <Button text="View all Speakers" className="!text-white" />
+                <Button text="View all Speakers" link="/speakers" className="!text-white" />
             </div>
         </div>
     )
