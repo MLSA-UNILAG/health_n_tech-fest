@@ -1,11 +1,12 @@
 import { AboutUs } from "@/components/ui/AboutUs";
-import { Button } from "@/components/ui/Button";
 import { Carousel } from "@/components/ui/Carousel";
-import CountdownTimer, { Countdown } from "@/components/ui/Countdown";
+import CountdownTimer from "@/components/ui/Countdown";
 import { HeroSection } from "@/components/ui/Hero";
 import { Speakers } from "@/components/ui/Speakers";
 import { Volunteers } from "@/components/ui/Volunteers";
-import { CalendarIcon, ClockIcon, Line, LocationIcon } from "@/public/Icons";
+import CalendarIcon from "@/components/svgs/CalendarIcon";
+import ClockIcon from "@/components/svgs/ClockIcon";
+import LocationIcon from "@/components/svgs/LocationIcon";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <div className="border border-br rounded-md flex flex-col gap-4 md:flex-row justify-between text-center p-8 items-center text-white w-4/5 m-auto mt-8">
         <div className="flex flex-col justify-center items-center max-w-[300px] gap-3">
           <CalendarIcon />
-          <p className=" ">Saturday, November 23rd, 2024</p>
+          <p className=" ">Saturday, November 22rd, 2024</p>
         </div>
 
         <div className="flex flex-col justify-center items-center max-w-[300px] gap-3">

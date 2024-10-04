@@ -42,7 +42,7 @@ export const Navbar = () => {
       <div className="flex flex-row justify-between items-center">
         <div>
           <Link href="/" className="logo flex flex-row gap-4">
-            <MLSALogo />
+            {/* <MLSALogo />
             <div>
               <div className="w-[150px] text-[14px]">
                 Microsoft Learn Student Ambassador
@@ -50,14 +50,15 @@ export const Navbar = () => {
               <div className="text-lightBlue text-[12px]">
                 University of Lagos
               </div>
-            </div>
+            </div> */}
+            Home
           </Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setOpen(currentState => !currentState)}>
-            <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current text-white hover:text-gray-400 focus:text-gray-400 " viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <svg className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-white hover:text-gray-400 focus:text-gray-400 " viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
             { !open ? (
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             ) : (
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             )}
@@ -72,7 +73,7 @@ export const Navbar = () => {
       )}>
         { headerLinks.map(link => (
           <div key={link.id} className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded">
-            <Link href={link.link} className={isActive(link.link) ? "border-b-[1px] border-yellow py-1" : ""}>{link.title}</Link>
+            <Link href={link.link}>{link.title}</Link>
           </div>
         )) }
         <div className="py-2 rounded flex justify-center">
