@@ -41,7 +41,7 @@ export const Volunteers = () => {
             </div>
 
             <div className="flex justify-center mt-12">
-                <Button text="Become a Volunteer" className="!text-white" />
+                <Button text="Become a Volunteer" link="https://forms.office.com/pages/responsepage.aspx?id=oBzDhDusrk6tEVGdgCM-b2rhIZyiDIRMq6jycZEfjHlUQVBNQjhMNE5JOVc2M1VJNFBWNFE2NldSUS4u&fbclid=PAZXh0bgNhZW0CMTEAAaaeJBkoaJY6NwMu78Lm7hVFAnZeFvqVR0oi7YXwVxh7_BZ-skseUk1CbQk_aem_m_RBIdal6XM_1G3pMNKNug&route=shorturl" className="!text-white" />
             </div>
         </div>
     )

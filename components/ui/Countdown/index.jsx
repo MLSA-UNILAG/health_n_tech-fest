@@ -97,7 +97,7 @@ const CountdownTimer = ({ targetDate }) => {
 );
 
     return (
-        <div className="text-center text-white">
+        <div className="text-center text-white my-10">
             {diff > 0 ? timerComponents : <span className='text-5xl font-extrabold'>Its Today!</span>}
         </div>
     );
