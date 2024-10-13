@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Dot from '../svgs/Dot'
 
 const SpeakerCard = ({ image, title, speaker, role }) => {
   return (
@@ -15,13 +16,14 @@ const SpeakerCard = ({ image, title, speaker, role }) => {
         <h2 className='font-semibold md:text-xl lg:text-3xl'>{title}</h2>
         <div className='flex flex-col items-center md:flex-row gap-1 lg:gap-4 border border-primary-color rounded-full px-4 py-1 my-3'>
           <h5 className='font-semibold lg:text-xl'>{speaker}</h5>
-          <Image
+          {/* <Image
             src={'/icons/dot.svg'}
             alt='Blue dot'
             width={5}
             height={5}
             className="hidden md:block"
-          />
+          /> */}
+          <Dot className="border hidden md:block" />
           <p className='text-sm lg:text-lg'>{role}</p>
         </div>
       </div>

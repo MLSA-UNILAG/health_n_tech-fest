@@ -42,7 +42,7 @@ export const Navbar = () => {
       <div className="flex flex-row justify-between items-center">
         <div>
           <Link href="/" className="logo flex flex-row gap-4">
-            {/* <MLSALogo />
+            <MLSALogo />
             <div>
               <div className="w-[150px] text-[14px]">
                 Microsoft Learn Student Ambassador
@@ -50,8 +50,7 @@ export const Navbar = () => {
               <div className="text-lightBlue text-[12px]">
                 University of Lagos
               </div>
-            </div> */}
-            Home
+            </div>
           </Link>
         </div>
         <div className="md:hidden">

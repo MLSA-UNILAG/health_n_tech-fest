@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@/material/ui'
 import Image from 'next/image'
+import ArrowRight from '../svgs/ArrowRight'
 import Link from 'next/link'
 import clsx from 'clsx'
 
@@ -19,12 +20,7 @@ const AppButton = ({ children }) => {
     <>
       <Button className='bg-gradient-to-r from-[#1976bc] to-[#1a98f9] border-0 inline-flex items-center justify-center gap-2 my-4 normal-case text-sm'>
         {children}
-        <Image
-          src={'/icons/arrow-right.svg'}
-          alt='Question mark icon'
-          width={20}
-          height={20}
-        />
+        <ArrowRight />
       </Button>
     </>
   )
