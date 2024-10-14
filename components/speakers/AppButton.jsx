@@ -20,7 +20,7 @@ const AppButton = ({ children }) => {
       <Button className='bg-gradient-to-r from-[#1976bc] to-[#1a98f9] border-0 inline-flex items-center justify-center gap-2 my-4 normal-case text-sm'>
         {children}
         <Image
-          src={'/icons/arrow-right.svg'}
+          src={'/Icons/arrow-right.svg'}
           alt='Question mark icon'
           width={20}
           height={20}
