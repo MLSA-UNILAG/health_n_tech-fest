@@ -13,7 +13,9 @@ const SpeakersList = () => {
           <p className='text-xs lg:text-sm font-medium'>Trailblazing Experts. Inspiring Voices Leading the Health-Tech Revolution.</p>
         </div>
         <Divider className='text-sm w-full' />
-        <div className="md:px-32">
+        {/* When the Speakers details is ready, comment out the "coming soon" and use this */}
+
+        {/* <div className="md:px-32">
           { speakerData.map(speaker => (
             <SpeakerCard 
               key={speaker.id}
@@ -24,6 +26,10 @@ const SpeakersList = () => {
             />
           
           )) }
+        </div> */}
+        <div className="flex flex-row items-end py-20 mb-5 gp-4 text-center justify-center bg-primary">
+          <p className="text-6xl text-white font-extrabold">COMING SOON</p>
+          <p className="text-yellow font-extrabold text-6xl">!</p>
         </div>
       </div>
     </section>
