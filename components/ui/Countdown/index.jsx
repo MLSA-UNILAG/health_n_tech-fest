@@ -68,29 +68,29 @@ const CountdownTimer = ({ targetDate }) => {
     const timerComponents = [];
     timerComponents.push(
         <div className="text-center my-4">
-            <p className="text-lightBlue text-xl tracking-widest">COMING TO YOU IN</p>
-            <div className="flex flex-row my-10 gap-8 items-center justify-center align-middle">
+            <p className="text-lightBlue md:text-xl text-md tracking-widest">COMING TO YOU IN</p>
+            <div className="flex flex-row md:mb-10 md:my-3 my-10 gap-3 md:gap-8 items-center justify-center align-middle">
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['days']}</p>
-                    <p className="text-yellow">Days</p>
+                    <p className="text-white text-[8vw] md:text-7xl font-extrabold">{timeLeft['days']}</p>
+                    <p className="text-yellow text-[12px] md:text-lg">Days</p>
                 </div>
 
-                <p className="text-8xl text-white">:</p>
+                <p className="text-[8vw] md:text-8xl text-white">:</p>
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['hours']}</p>
-                    <p className="text-yellow">Hours</p>
+                    <p className="text-white text-[8vw] md:text-7xl font-extrabold">{timeLeft['hours']}</p>
+                    <p className="text-yellow text-[12px] md:text-lg">Hours</p>
                 </div>
-                <p className="text-8xl text-white">:</p>
+                <p className="text-[8vw] md:text-8xl text-white">:</p>
 
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['minutes']}</p>
-                    <p className="text-yellow">Minutes</p>
+                    <p className="text-white text-[8vw] md:text-7xl font-extrabold">{timeLeft['minutes']}</p>
+                    <p className="text-yellow text-[12px] md:text-lg">Minutes</p>
                 </div>
-                <p className="text-8xl text-white">:</p>
+                <p className="text-[8vw] md:text-8xl text-white">:</p>
 
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['seconds']}</p>
-                    <p className="text-yellow">Seconds</p>
+                    <p className="text-white text-[8vw] md:text-7xl font-extrabold">{timeLeft['seconds']}</p>
+                    <p className="text-yellow text-[12px] md:text-lg">Seconds</p>
                 </div>
             </div>
         </div>

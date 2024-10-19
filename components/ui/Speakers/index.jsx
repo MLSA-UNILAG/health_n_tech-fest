@@ -34,7 +34,7 @@ const speakers = [
 
 export const Speakers = () => {
     return (
-        <div className="!bg-white w-full px-24 pb-24 py-8 ">
+        <div className="!bg-white w-full px-10 md:px-24 md:pb-24 py-8 ">
             <div className="flex flex-col gap-1 5 ">
                 <p className=" text-lightPurple">OUR LINE OF SPEAKERS</p>
                 <div className="flex flex-row gap-3">
@@ -56,8 +56,8 @@ export const Speakers = () => {
                 ))}
                 </div> */}
                 <div className="flex flex-row items-end py-20 mb-5 gp-4 text-center justify-center bg-primary">
-                    <p className="text-6xl text-white font-extrabold">COMING SOON</p>
-                    <p className="text-yellow font-extrabold text-6xl">!</p>
+                    <p className="text-[12vw] md:text-6xl text-white font-extrabold">COMING SOON</p>
+                    <p className="text-yellow font-extrabold text-[15vw] md:text-6xl">!</p>
                 </div>
             </div>
 

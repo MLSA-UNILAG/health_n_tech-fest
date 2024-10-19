@@ -1,7 +1,7 @@
 const faqs = [
   {
     id: 1,
-    title: 'How do I join the MLSA UNILAG community?',
+    title: 'What is MLSA UNILAG?',
     text: 'MLSA stands for the Microsoft Learn Student Ambassadors, University of Lagos. We are a community of students passionate about learning and innovations.'
   },
   {
@@ -17,12 +17,22 @@ const faqs = [
   {
     id: 4,
     title: 'How do I join the MLSA UNILAG community?',
-    text: 'MLSA stands for the Microsoft Learn Student Ambassadors, University of Lagos. We are a community of students passionate about learning and innovations.'
+    text: 'Click on this link - https://forms.office.com/r/aQkzLcyXG8, you will be redirected to a form. After you complete and submit the form, you will subsequently be sent a mail with the link to join the community.'
   },
   {
     id: 5,
-    title: 'How do I join the MLSA UNILAG community?',
-    text: 'MLSA stands for the Microsoft Learn Student Ambassadors, University of Lagos. We are a community of students passionate about learning and innovations.'
+    title: 'Do I have to pay any fees before I can join the community?',
+    text: 'NO! The community is free for all.'
+  },
+  {
+    id: 6,
+    title: 'What resources do I get access to when I join the community?',
+    text: 'Our community blog at https://dev.to/mlasunilag, and the numerous resources at https://learn.microsoft.com/en-us/'
+  },
+  {
+    id: 7,
+    title: 'How can I gain access to MLSA community events?',
+    text: 'By being an active member of the community. Be on the lookout for events as they come, and make sure to register and attend. Also, don’t forget to take great pictures. 😉'
   },
 ]
 
