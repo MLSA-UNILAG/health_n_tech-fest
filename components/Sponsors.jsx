@@ -2,51 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import SponsorCard from './speakers/SponsorCard'
 import { MLSAUnilagLogo } from './svgs'
+import sponsorList from '@/data/sponsorsdata'
 
 const Sponsors = () => {
-  const sponsorList = [
-    {
-      id: 1,
-      logo: '/group.png'
-    },
-    {
-      id: 2,
-      logo: '/group.png'
-    },
-    {
-      id: 3,
-      logo: '/Images/nithub.png'
-    },
-    {
-      id: 4,
-      logo: '/Images/unilag.png'
-    },
-    {
-      id: 5,
-      logo: '/Images/nithub.png'
-    },
-    {
-      id: 6,
-      logo: '/Images/unilag.png'
-    },
-    {
-      id: 7,
-      logo: '/Images/nithub.png'
-    },
-    {
-      id: 8,
-      logo: '/Images/unilag.png'
-    },
-    {
-      id: 9,
-      logo: '/Images/nithub.png'
-    },
-    {
-      id: 10,
-      logo: '/Images/unilag.png'
-    },
-  ]
-
   return (
     <section className="py-8">
       <div>
@@ -63,13 +21,20 @@ const Sponsors = () => {
         </div>
         <div className="border border-[#617b97] rounded-lg flex flex-col items-center gap-8 w-4/5 m-auto px-6 py-6 my-6">
           <h5 className="font-semibold text-white text-center tracking-widest">OUR HEADLINE SPONSORS</h5>
-          <div className="flex flex-wrap items-center gap-4">
+          {/* When the Sponsors details is ready, comment out the "coming soon" and use this */}
+          <div>
+            {/* <div className="flex flex-wrap items-center gap-4">
             {sponsorList.map(sponsor => (
               <SponsorCard 
                 key={sponsor.id} 
                 logo={sponsor.logo}
               />
             ))}
+          </div> */}
+            <div className="flex flex-row items-end my-20 gp-4 text-center justify-center">
+              <p className="text-[15vw] md:text-6xl text-white font-extrabold">COMING SOON</p>
+              <p className="text-yellow font-extrabold text-[15vw] md:text-6xl">!</p>
+            </div>
           </div>
         </div>
       </div>

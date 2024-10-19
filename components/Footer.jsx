@@ -18,22 +18,23 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center gap-3 py-4">
           <Link href='/speakers' className="text-sm">Speakers</Link>
-          <Link href='/' className="text-sm">Schedule</Link>
-          <Link href='/team' className="text-sm">Teams</Link>
-          <Link href='/' className="text-sm">Become a volunteer</Link>
+          <Link href='/schedule' className="text-sm">Schedule</Link>
+          <Link href='/' className="text-sm">Teams</Link>
+          <Link href='https://forms.office.com/pages/responsepage.aspx?id=oBzDhDusrk6tEVGdgCM-b2rhIZyiDIRMq6jycZEfjHlUQVBNQjhMNE5JOVc2M1VJNFBWNFE2NldSUS4u&fbclid=PAZXh0bgNhZW0CMTEAAaZDCcakusThme0rqL1PEH7vVby2AFUzNQQHxk9gsb1KUxLDglM9UYPmqKI_aem_xG3pE56x9HlYzpTQcVqxHw&route=shorturl' className="text-sm">Become a volunteer</Link>
         </div>
         <div className="flex flex-col items-center gap-3 py-4">
-          <Link href='/' className="text-sm">Join the community</Link>
+          <Link href='https://forms.office.com/r/aQkzLcyXG8' className="text-sm">Join the community</Link>
           <Link href='/' className="text-sm">Community guidelines</Link>
+          <Link href='https://mvp.microsoft.com/studentambassadors' className="text-sm">Ambassadors</Link>
         </div>
         <div className="flex flex-col items-center gap-3 py-4">
           <p className="text-sm">Contact Us</p>
           <p className="text-sm">Follow us:</p>
-            <div className="grid grid-cols-4 gap-x-5">
-              <TwitterIcon className="text-2xl" />
-              <LinkedinIcon className="text-2xl" />
-              <InstagramIcon className="text-2xl" />
-              <FacebookIcon className="text-2xl" />
+            <div className="grid grid-cols-2 gap-x-5">
+            <Link href='x.com/mlsa_unilag' className="text-sm"><TwitterIcon className="text-2xl" /></Link>
+            <Link href='www.instagram.com/mlsa_unilag/' className="text-sm"><InstagramIcon className="text-2xl" /></Link>
+            {/* <Link href='/' className="text-sm"><LinkedinIcon className="text-2xl" /></Link> */}
+            {/* <Link href='/' className="text-sm"><FacebookIcon className="text-2xl" /></Link> */}
             </div>
         </div>
       </div>

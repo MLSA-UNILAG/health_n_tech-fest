@@ -1,6 +1,7 @@
 import React from 'react'
 import AppButton from './AppButton'
 import { HeroAvatarMale, HeroAvatarFemale, HeroAvatarFemale2 } from '../svgs'
+import { Button } from '../ui/Button'
 
 const Hero = () => {
   return (
@@ -17,9 +18,10 @@ const Hero = () => {
                   <span className='text-yellow'>.</span>
               </h3>
             </div>
-            <div>
+            <div className="m-6 flex flex-col gap-6 justify-center items-center">
               <p className='text-base font-semibold'>We have selected the best to bring you amazing talks in this year&apos;s <br /> Fest. Brace up for a premium experience.</p>
-              <AppButton>Get your ticket</AppButton>
+              {/* <AppButton>Get your ticket</AppButton> */}
+              <Button className="w-fit" text="Get your Ticket" link="https://forms.office.com/r/8d1hxssB26" />
             </div>
           </div>
       </div>

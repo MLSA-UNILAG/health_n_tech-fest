@@ -16,7 +16,7 @@ const SpeakerCard = ({ image, title, speaker, role }) => {
         <div className='flex flex-col items-center md:flex-row gap-1 lg:gap-4 border border-primary-color rounded-full px-4 py-1 my-3'>
           <h5 className='font-semibold lg:text-xl'>{speaker}</h5>
           <Image
-            src={'/icons/dot.svg'}
+            src={'/Icons/dot.svg'}
             alt='Blue dot'
             width={5}
             height={5}
