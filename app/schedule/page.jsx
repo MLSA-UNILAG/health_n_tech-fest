@@ -1,7 +1,7 @@
 export default function Schedule() {
     return (
-        <div className="w-full px-24 pb-16 py-8 ">
-            <div className="flex flex-row items-end my-14 gp-1 text-center justify-center">
+        <div className="w-full px-8 pb-10 md:px-24 md:pb-16 md:py-8 py-4 ">
+            <div className="flex flex-row items-end my-7 md:my-14 gp-1 text-center justify-center">
                 <p className="text-6xl text-white font-extrabold">Event Schedule</p>
                 {/* <p className="text-yellow font-extrabold text-6xl">!</p> */}
             </div>

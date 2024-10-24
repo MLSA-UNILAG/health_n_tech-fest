@@ -1,12 +1,12 @@
-import { ArrowRightIcon } from "@/public/Icons/ArrowRight"
 import { MLSALogo } from "@/public/Icons/MLSALogo"
 import Link from "next/link";
 import { Button } from "../Button";
+import NavMobile from "../NavMobile";
 
-export const Navbar = () => {
+export const NavbarLG = () => {
 
     return (
-        <div className="Navbar flex flex-row justify-between text-white items-center mx-16">
+        <div className="Navbar flex flex-row justify-between text-white items-center mx-12">
             <div>
                 <Link href='/' className="logo flex flex-row gap-4">
                     <MLSALogo />
@@ -50,4 +50,21 @@ export const Navbar = () => {
             </div>
         </div>
     )
+}
+
+export const Navbar = () => {
+    return (
+        <div fluid className="navbar p-0" style={{ top: 0, position: "sticky", zIndex: 1 }}>
+            <div className="hidden md:block">
+                {/* <p>You also have a huge screen</p> */}
+                <NavbarLG />
+            </div>
+
+            <div className="md:hidden">
+                {/* <p>You also have a small screen</p> */}
+                <NavMobile />
+            </div>
+
+        </div>
+    );
 }

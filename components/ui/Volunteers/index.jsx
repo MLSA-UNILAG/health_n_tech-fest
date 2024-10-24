@@ -11,29 +11,29 @@ export const Volunteers = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center mt-6">
-                <div className="child:w-[250px]">
-                    <div className=" -rotate-6">
+            <div className="flex flex-col justify-center items-center mt-6 h-fit">
+                <div className=" child:w-[50%] md:child:w-[250px] flex md:block justify-center items-center">
+                    <div className=" -rotate-6 relative !w-[70%] md:!w-[250px] m-auto md:relative">
                         <Community1Blur className="blur-sm  -z-10" />
                     </div>
-                    <div className="relative -mt-[170px] ml-2 z-30">
+                    <div className="absolute m-auto md:relative -mt-[10px] md:-mt-[170px] md:ml-2 z-30">
                         <Community1 />
                     </div>
                 </div>
                 <div className="flex flex-row justify-between gap-12 -mt-10">
-                    <div className="child:w-[250px]">
+                    <div className="md:child:w-[250px]">
                         <div className=" -rotate-6">
                             <Community3Blur className="blur-sm  -z-40" />
                         </div>
-                        <div className="relative -mt-[170px] ml-2 z-40">
+                        <div className="relative -mt-[100px] md:-mt-[170px] ml-2 z-40">
                             <Community3 />
                         </div>
                     </div>
-                    <div className="child:w-[250px]">
+                    <div className="md:child:w-[250px]">
                         <div className=" -rotate-6">
                             <Community2Blur className=" -z-30" />
                         </div>
-                        <div className="relative -mt-[170px] ml-2 z-10">
+                        <div className="relative -mt-[100px] md:-mt-[170px] ml-2 z-10">
                             <Community2 />
                         </div>
                     </div>
