@@ -39,7 +39,7 @@ export default function Home() {
 
       <AboutUs />
       <Speakers />
-      {/* <Volunteers /> */}
+      <Volunteers />
       <div className="">
         <Carousel />
       </div>

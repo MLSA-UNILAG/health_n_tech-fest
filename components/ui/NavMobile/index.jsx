@@ -42,7 +42,7 @@ const NavMobile = () => {
             </div>
 
             {/* Hamburger Menu Icon */}
-            { isOpen ? <div></div> : <Hamburger toggled={isOpen} size={20} toggle={setOpen} style={{ color: "white", backgroundColor: "white" }}/> }
+            { isOpen ? <div></div> : <div className="child:text-white"><Hamburger toggled={isOpen} size={20} toggle={setOpen} style={{ color: "white", backgroundColor: "white" }}/></div> }
             
             <AnimatePresence>
                 {isOpen && (
@@ -53,7 +53,7 @@ const NavMobile = () => {
                         className="fixed top-0 left-0 h-fit w-[100%]  bg-primary  from-neutral-800 via-neutral-950 to-neutral-700 z-50"
                     >
                         {/* Close Button on the Right */}
-                        <div className="flex justify-end p-5">
+                        <div className="flex justify-end p-5 child:text-white">
                             <Hamburger toggled={isOpen} size={20} toggle={setOpen} style={{ color: "white" }} />
                         </div>
 
