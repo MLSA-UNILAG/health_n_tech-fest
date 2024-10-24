@@ -15,7 +15,7 @@ export default function Home() {
       </div>
 
       <div className="mt-5 md:mt-20 mx-24">
-        <CountdownTimer targetDate="2024-11-06T00:00:00" />
+        <CountdownTimer targetDate="2024-11-23T00:00:00" />
       </div>
 
       <div className="border border-br rounded-md flex flex-col gap-4 md:flex-row justify-between text-center p-8 items-center text-white w-4/5 m-auto mt-8">

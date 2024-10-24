@@ -59,12 +59,12 @@ const CountdownTimer = ({ targetDate }) => {
 
     useEffect(() => {
         setTimeLeft(calculateTimeLeft());
-        const timer = setTimeout(() => {
+        const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
 
-        return () => clearTimeout(timer);
-    });
+        return () => clearInterval(timer);
+    }, []);
 
     const timerComponents = [];
     timerComponents.push(
