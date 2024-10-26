@@ -2,45 +2,18 @@
 // components/CountdownTimer.js
 import { useState, useEffect } from 'react';
 
-export const Countdown = () => {
-    return (
-        <div className="text-center my-4">
-            <p className="text-lightBlue text-xl">COMING TO YOU IN</p>
-            <div className="flex flex-row my-6 gap-8 items-center justify-center align-middle">
-                <div>
-                    <p className="text-white text-7xl font-extrabold">23</p>
-                    <p className="text-yellow">Days</p>
-                </div>
-
-                <p className="text-8xl text-white">:</p>
-                <div>
-                    <p className="text-white text-7xl font-extrabold">13</p>
-                    <p className="text-yellow">Hours</p>
-                </div>
-                <p className="text-8xl text-white">:</p>
-
-                <div>
-                    <p className="text-white text-7xl font-extrabold">14</p>
-                    <p className="text-yellow">Minutes</p>
-                </div>
-                <p className="text-8xl text-white">:</p>
-
-                <div>
-                    <p className="text-white text-7xl font-extrabold">5</p>
-                    <p className="text-yellow">Seconds</p>
-                </div>
-            </div>
-        </div>
-    )
-}
-
 
 const CountdownTimer = ({ targetDate }) => {
-    let diff;
+    const [timeLeft, setTimeLeft] = useState({});
+    const [diff, setDiff] = useState(0);
+
+    const formatTime = (time) => {
+        return String(time).padStart(2, '0');
+    };
 
     const calculateTimeLeft = () => {
         const difference = new Date(targetDate) - new Date();
-        diff = difference;
+        setDiff(difference);
         let timeLeft = {};
 
         if (difference > 0) {
@@ -53,9 +26,7 @@ const CountdownTimer = ({ targetDate }) => {
         }
 
         return timeLeft;
-    };
-
-    const [timeLeft, setTimeLeft] = useState({});
+    };    
 
     useEffect(() => {
         setTimeLeft(calculateTimeLeft());
@@ -68,30 +39,30 @@ const CountdownTimer = ({ targetDate }) => {
 
     const timerComponents = [];
     timerComponents.push(
-        <div className="text-center my-4">
+        <div key={1} className="text-center my-4">
             <p className="text-lightBlue text-xl tracking-widest">COMING TO YOU IN</p>
-            <div className="flex flex-row my-10 gap-8 items-center justify-center align-middle">
+            <div className="flex flex-row my-10 gap-3 md:gap-8 items-center justify-center align-middle">
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['days']}</p>
-                    <p className="text-yellow">Days</p>
+                    <p className="text-white text-3xl xs:text-5xl md:text-7xl font-semibold">{formatTime(timeLeft['days'])}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Days</p>
                 </div>
 
-                <p className="text-8xl text-white">:</p>
+                <p className="text-2xl md:text-8xl text-white">:</p>
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['hours']}</p>
-                    <p className="text-yellow">Hours</p>
+                    <p className="text-white text-3xl xs:text-5xl md:text-7xl font-semibold">{formatTime(timeLeft['hours'])}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Hours</p>
                 </div>
-                <p className="text-8xl text-white">:</p>
+                <p className="text-2xl md:text-8xl text-white">:</p>
 
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['minutes']}</p>
-                    <p className="text-yellow">Minutes</p>
+                    <p className="text-white text-3xl xs:text-5xl md:text-7xl font-semibold">{formatTime(timeLeft['minutes'])}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Minutes</p>
                 </div>
-                <p className="text-8xl text-white">:</p>
+                <p className="text-2xl md:text-8xl text-white">:</p>
 
                 <div>
-                    <p className="text-white text-7xl font-extrabold">{timeLeft['seconds']}</p>
-                    <p className="text-yellow">Seconds</p>
+                    <p className="text-white text-3xl xs:text-5xl md:text-7xl font-semibold">{formatTime(timeLeft['seconds'])}</p>
+                    <p className="text-yellow text-sm md:text-2xl">Seconds</p>
                 </div>
             </div>
         </div>
