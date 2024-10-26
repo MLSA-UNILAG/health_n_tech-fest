@@ -32,8 +32,10 @@ const Sponsors = () => {
             ))}
           </div> */}
             <div className="flex flex-row items-end my-20 gp-4 text-center justify-center">
-              <p className="text-6xl text-white font-extrabold">COMING SOON</p>
-              <p className="text-yellow font-extrabold text-6xl">!</p>
+              <p className="text-6xl text-white font-extrabold">
+                COMING SOON
+                <span className="text-yellow font-extrabold text-6xl ml-2">!</span>
+              </p>
             </div>
           </div>
         </div>

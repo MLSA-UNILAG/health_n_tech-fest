@@ -42,7 +42,7 @@ export const Navbar = () => {
     <div className="Navbar text-white items-center mx-4 md:mx-6 md:flex md:justify-between lg:mx-10">
       <div className="flex flex-row justify-between items-center">
         <div>
-          <Link href="/" className="logo flex flex-row gap-4">
+          <Link href="/" onClick={() => setOpen(false)} className="logo flex flex-row gap-4">
             <Image
               src={mlsaLogo}
               alt="MLSA Logo"
@@ -57,10 +57,14 @@ export const Navbar = () => {
             </div>
           </Link>
         </div>
+
+        {/* Mobile Nav Toggle */}
         <div className="md:hidden">
           <button onClick={() => setOpen((currentState) => !currentState)}>
             <svg
-              className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-white hover:text-gray-400 focus:text-gray-400 "
+              className={`w-7 h-7 sm:w-8 sm:h-8 fill-current text-white hover:text-gray-400 focus:text-gray-400 transition-all duration-300 ease-in-out rotate-180 ${
+                  open ? "rotate-90" : ""
+                }`}
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
@@ -70,9 +74,9 @@ export const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              ) : (
-                <path
+                  />
+                ) : (
+                  <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M6 18 18 6M6 6l12 12"
@@ -85,8 +89,8 @@ export const Navbar = () => {
 
       <div
         className={clsx(
-          "md:flex md:items-center md:gap-4 lg:gap-6 text-[16px]",
-          open ? "flex flex-col mt-5 gap-4" : "hidden"
+          "md:flex md:items-center md:gap-4 lg:gap-6 text-[16px] transition-all duration-700 overflow-hidden",
+          open ? "flex flex-col mt-5 gap-4 opacity-1" : "opacity-0 h-0"
         )}
       >
         {headerLinks.map((link) => (
@@ -94,7 +98,7 @@ export const Navbar = () => {
             key={link.id}
             className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded"
           >
-            <Link href={link.link}>{link.title}</Link>
+            <Link href={link.link} onClick={() => setOpen(false)}>{link.title}</Link>
           </div>
         ))}
         <div className="py-2 rounded flex justify-center">

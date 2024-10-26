@@ -28,8 +28,10 @@ const SpeakersList = () => {
           )) }
         </div> */}
         <div className="flex flex-row items-end py-20 mb-5 gp-4 text-center justify-center bg-primary">
-          <p className="text-6xl text-white font-extrabold">COMING SOON</p>
-          <p className="text-yellow font-extrabold text-6xl">!</p>
+          <p className="text-6xl text-white font-extrabold">
+            COMING SOON
+            <span className="text-yellow font-extrabold text-6xl ml-2">!</span>
+          </p>
         </div>
       </div>
     </section>

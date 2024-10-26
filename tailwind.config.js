@@ -33,7 +33,7 @@ module.exports = withMT({
       },
       textStroke: {
         "stroke-3d": "4px black"
-      }
+      },
     },
     colors: {
       transparent: 'transparent',

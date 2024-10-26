@@ -4,11 +4,11 @@ import StrokeText from "../StrokeText"
 
 export const HeroSection = () => {
     return (
-        <div className="m-auto py-6 w-full first-letter: text-white flex flex-col justify-center text-center ">
+        <div className="m-auto py-10 w-full first-letter: text-white flex flex-col justify-center text-center ">
             <div className="flex gap-6 md:gap-0 justify-center w-11/12 md:w-2/3 m-auto">
                 
                 <div className="flex flex-col flex-1 gap-3 justify-center items-center relative">
-                    <div className='absolute bottom-0 -left-14 mt-[110px] p-2 w-[50px] h-[50px] md:w-[80px] md:h-[80px] xl:w-[100px] xl:h-[100px] rounded-full bg-gradient-to-r from-sticker_gradient_from to-sticker_gradient_to hidden md:flex items-center justify-center'>
+                    <div className='absolute bottom-0 -left-14 mt-[110px] p-2 w-[50px] h-[50px] md:w-[80px] md:h-[80px] xl:w-[100px] xl:h-[100px] rounded-full bg-gradient-to-ra from-sticker_gradient_from to-sticker_gradient_to hidden md:flex items-center justify-center'>
                         <StickerGirl />
                     </div>
                     <div className="absolute bottom-1/2 left-0 translate-y-1/3">
