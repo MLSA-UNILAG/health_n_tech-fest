@@ -89,16 +89,25 @@ export const Navbar = () => {
 
       <div
         className={clsx(
-          "md:flex md:items-center md:gap-4 lg:gap-6 text-[16px] transition-all duration-700 overflow-hidden",
-          open ? "flex flex-col mt-5 gap-4 opacity-1" : "opacity-0 h-0"
+          "flex md:flex-row md:opacity-100 md:h-auto md:items-center md:gap-4 lg:gap-6 text-[16px] transition-all duration-700 overflow-hidden",
+          open ? "flex-col mt-5 gap-4" : "opacity-0 h-0"
         )}
       >
         {headerLinks.map((link) => (
           <div
             key={link.id}
-            className="hover:text-infoCard_border transition duration-300 text-center py-2 rounded"
+            className="hover:text-infoCard_border transition duration-300 text-center py-2 "
           >
-            <Link href={link.link} onClick={() => setOpen(false)}>{link.title}</Link>
+            <Link 
+              href={link.link} 
+              className={clsx(
+                "relative py-3 before:h-[1px] before:bg-yellow before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full",
+                isActive(link.link) ? "before:w-full" : "before:w-0"
+              )}
+              // className={`py-3 ${isActive(link.link) ? "border-b border-yellow" : ""}`}
+              onClick={() => setOpen(false)}>
+                {link.title}
+            </Link>
           </div>
         ))}
         <div className="py-2 rounded flex justify-center">
