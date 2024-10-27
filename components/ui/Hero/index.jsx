@@ -1,6 +1,7 @@
 import { StickerGirl, StickerGuy } from "@/public/Icons"
 import { Button } from "../Button"
 import StrokeText from "../StrokeText"
+import Link from "next/link"
 
 export const HeroSection = () => {
     return (
@@ -32,7 +33,7 @@ export const HeroSection = () => {
                 <p className="text-md leading-8">
                     Join us for a community-driven health awareness event by the MLSA Unilag Community! Designed to bridge the knowledge gap in healthcare, Health-n-Tech Fest Lagos brings together students and individuals to explore and discuss crucial healthcare topics. Be a part of this transformative experience and help build a healthier Nigeria.
                 </p>
-                <Button className="w-fit" text="Get your Ticket"/>
+                <Button className="w-fit" text="Get your Ticket" link="https://forms.office.com/r/8d1hxssB26" />
             </div>
         </div>
     )

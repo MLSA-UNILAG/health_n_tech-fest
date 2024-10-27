@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import AppButton from './speakers/AppButton'
+import { Button } from './ui/Button'
 
 const MoreFAQ = () => {
   return (
@@ -12,10 +13,11 @@ const MoreFAQ = () => {
           width={200}
           height={200}
         />
-        <div>
+        <div className='flex justify-center flex-col items-center'>
           <h3 className='font-semibold text-2xl mb-3'>Still have some questions?</h3>
-          <p className='text-[#7c7c7c]'>Can&apos;t find the answer you&apos;re looking for? <br />Please contact our friendly team.</p>
-          <AppButton>Get in Touch</AppButton>
+          <p className='text-[#7c7c7c] mb-4'>Can&apos;t find the answer you&apos;re looking for? <br />Please contact our friendly team.</p>
+          {/* <AppButton>Get in Touch</AppButton> */}
+          <Button text="Get in Touch" link="x.com/mlsa_unilag"/>
         </div>
       </div>
     </section>

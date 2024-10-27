@@ -1,6 +1,7 @@
 import React from 'react'
 import AppButton from './AppButton'
 import { HeroAvatarMale, HeroAvatarFemale, HeroAvatarFemale2 } from '../svgs'
+import { Button } from '../ui/Button'
 
 const Hero = () => {
   return (

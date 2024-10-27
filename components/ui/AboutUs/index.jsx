@@ -48,7 +48,7 @@ export const AboutUs = () => {
                         <div className="relative -mt-[60px] z-50 -ml-[60px]">
                             <Sticker1 />
                         </div>
-                        <div className="-z-10 -mt-[60px]">
+                        <div className="-z-10 -mt-[40px] md:-mt-[60px]">
                             <AboutCommunity />
                         </div>
                     </div>

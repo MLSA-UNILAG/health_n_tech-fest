@@ -28,3 +28,9 @@ export { default as TeamHeroAvatarFemale } from "@/public/Icons/team-hero-female
 
 // Divider Line
 export { default as Divider } from "@/public/Icons/Divider.svg"
+
+export { default as CalenderIcon } from "@/public/Icons/calendar.svg"
+
+export { default as LocationIcon } from "@/public/Icons/location.svg"
+
+export { default as ClockIcon } from "@/public/Icons/clock.svg"

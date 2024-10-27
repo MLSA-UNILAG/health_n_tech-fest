@@ -25,7 +25,7 @@ const FAQCard = ({ title, text, isOpen, onToggle }) => {
               width={20}
               height={20}
             />
-            <p className='text-lg flex-1'>{title}</p>
+            <p className='text-sm md:text-lg flex-1'>{title}</p>
             <Image  
               src={isOpen ? '/Icons/arrow-up.svg' : '/Icons/arrow-down.svg'}
               alt='Arrow down button'
@@ -34,7 +34,7 @@ const FAQCard = ({ title, text, isOpen, onToggle }) => {
             />
           </div>
         </AccordionHeader>
-      <AccordionBody className='text-white leading-6 p-0'>
+      <AccordionBody className='text-white text-[13px] md:text-lg leading-6 p-0'>
         {text}
       </AccordionBody>
     </Accordion>
