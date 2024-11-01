@@ -5,7 +5,7 @@ import { Divider } from "../svgs";
 
 const TeamsList = () => {
   return (
-    <section className="bg-page-white py-16">
+    <section className="bg-page-white py-12">
       <div className="w-11/12 m-auto">
         <div className="text-center mb-10">
           <h4 className='font-bold text-2xl lg:text-3xl mb-3'>Meet The Team</h4>

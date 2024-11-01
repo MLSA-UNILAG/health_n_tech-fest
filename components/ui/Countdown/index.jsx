@@ -9,26 +9,26 @@ const CountdownTimer = ({ targetDate }) => {
 
     const formatTime = (time) => {
         return String(time).padStart(2, '0');
-    };
-
-    const calculateTimeLeft = () => {
-        const difference = new Date(targetDate) - new Date();
-        setDiff(difference);
-        let timeLeft = {};
-
-        if (difference > 0) {
-            timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60)
-            };
-        }
-
-        return timeLeft;
     };    
 
     useEffect(() => {
+        const calculateTimeLeft = () => {
+            const difference = new Date(targetDate) - new Date();
+            setDiff(difference);
+            let timeLeft = {};
+    
+            if (difference > 0) {
+                timeLeft = {
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                    minutes: Math.floor((difference / 1000 / 60) % 60),
+                    seconds: Math.floor((difference / 1000) % 60)
+                };
+            }
+    
+            return timeLeft;
+        };
+        
         setTimeLeft(calculateTimeLeft());
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());

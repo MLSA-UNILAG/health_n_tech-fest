@@ -17,7 +17,7 @@ const Hero = () => {
               <TeamHeroAvatarMale className='w-14 h-14 mb-5 md:w-24 md:h-24 md:mr-5' />
             </div>
             <div>
-              <p className='text-lg font-semibold my-4'>Meet the dedicated team working tirelessly behind the scenes to bring you an unforgettable experience. Their passion and commitment make it all possible.</p>
+              <p className='text-lg font-semibold my-5'>Meet the dedicated team working tirelessly behind the scenes to bring you an unforgettable experience. Their passion and commitment make it all possible.</p>
               <AppButton>Reserve your Seat</AppButton>
             </div>
           </div>
