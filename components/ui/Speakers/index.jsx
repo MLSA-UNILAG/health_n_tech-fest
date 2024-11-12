@@ -36,8 +36,8 @@ export const Speakers = () => {
     <div className="!bg-white w-full px-10 md:px-24 pb-24 py-8 ">
       <div className="flex flex-col gap-1">
         <p className=" text-lightPurple text-center">OUR LINE OF SPEAKERS</p>
-        <div className="flex flex-row gap-3">
-          <p className="mb-6 text-2xl text-black">
+        <div className="flex flex-row justify-center gap-3">
+          <p className="mb-6 text-2xl text-black text-center">
             Trailblazing Experts. Inspiring Voices Leading the Health-Tech
             Revolution.
           </p>
