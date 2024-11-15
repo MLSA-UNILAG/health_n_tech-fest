@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <div className="border border-br rounded-md flex flex-col gap-4 md:flex-row justify-between text-center p-8 items-center text-white w-4/5 m-auto mt-8">
-        <div className="flex flex-col justify-center items-center max-w-[300px] gap-3">
+        <div className="flex flex-col justify-center items-center text-center md:w-1/3 gap-3">
           <CalenderIcon className="text-6xl md:w-fit" />
           <p>Saturday, November 23rd, 2024</p>
         </div>
