@@ -11,19 +11,18 @@ import { Volunteers } from "@/components/ui/Volunteers";
 export default function Home() {
   return (
     <main className="">
-      <div className="mt-[80px] mx-8 md:mx-24">
+      <div className="">
         <HeroSection />
       </div>
 
-      <div className="mt-[80px] mx-2 md:mx-24">
-        {/* <Countdown /> */}
-        <CountdownTimer targetDate="2024-11-23T10:00:00" />
+      <div className="mt-5 md:mt-20 mx-24">
+        <CountdownTimer targetDate="2024-11-23T00:00:00" />
       </div>
 
-      <div className="border border-br rounded-md flex flex-col md:flex-row justify-between text-center p-3 md:p-8 items-center text-white mx-6 md:mx-24">
-        <div className="flex flex-col justify-center items-center text-center md:w-1/3 md:gap-3 mb-3 md:m-0">
-          <CalenderIcon className="text-6xl md:w-fit " />
-          <p className="text-md md:text-lg m-0">Saturday, July 6th, 2024</p>
+      <div className="border border-br rounded-md flex flex-col gap-4 md:flex-row justify-between text-center p-8 items-center text-white w-4/5 m-auto mt-8">
+        <div className="flex flex-col justify-center items-center text-center md:w-1/3 gap-3">
+          <CalenderIcon className="text-6xl md:w-fit" />
+          <p>Saturday, November 23rd, 2024</p>
         </div>
 
         <div className="flex flex-col justify-center items-center text-center md:w-1/3 md:gap-3 mb-3 md:m-0">
